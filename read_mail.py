@@ -33,4 +33,5 @@ for response_part in data:
         for part in msg.walk():
             if part.get_content_type() == 'text/plain':
                 fw.write(part.get_payload())
+
 fw.close()
